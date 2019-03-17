@@ -1,0 +1,271 @@
+.topNav{
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.addressNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hsla(68, 70%, 33%, 0.6);
+}
+
+a:hover{
+  background-color: hsla(68, 70%, 33%, 0.8);
+
+
+}
+.addressNav a{
+  align-self: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 2rem;
+  padding: 10px;
+  color: black !important;
+  text-decoration: none !important;
+
+}
+
+.addressNav a:hover{
+  align-self: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 2rem;
+  padding: 10px;
+  text-decoration: none !important;
+  background-color: hsla(68, 60%, 33%, 0.6);
+  color: yellow !important;
+
+}
+
+.topNav a{
+  font-family: 'Francois One', sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 22px;
+  top: 100px;
+  text-decoration: overline;
+
+}
+
+.fbIcon{
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 25%;
+  top: 10px;
+  padding: 0;
+}
+
+.fbIcon a:hover{
+  text-decoration: none !important;
+  outline: none !important;
+  background-color: transparent;
+
+}
+
+
+body{
+  font-family: 'Francois One', sans-serif;
+}
+
+.breakpoint{
+  color:hsla(68, 60%, 33%, 0.9);
+  border: 40px solid hsla(68, 60%, 33%, 0.9);
+}
+
+
+html{
+
+  background: url(./assets/bgBullandBearRaleigh.JPG) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: -555555;
+}
+
+.container
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  width: 80vw;
+  height: 10vh;
+  padding: 2em;
+  margin: 1px;
+  border: .5px solid #255002;
+  background: hsla(68, 60%, 33%, 0.9);
+
+  align-self: flex-end;
+}
+
+footer a{
+  text-decoration: none;
+  color: #555;
+}
+
+
+
+.contentMenu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsla(24, 30%, 22%, 0.6);
+  border: 2px solid gray;
+  height: 40%;
+}
+.half{
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+
+}
+
+.halfContent{
+  width: 10%;
+}
+.foodPics{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.foodPics img{
+  width: 10%;
+  height: 10%;
+
+}
+
+.imgOne{
+  flex-grow: 1;
+}
+.imgTwo{
+  flex-grow: 2;
+}
+
+.imgThree{
+  flex-grow: 3;
+}
+
+/* menus */
+
+.menuItemFull{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.eachMenuItem{
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+  width: 60vw;
+  color: black;
+}
+
+.singlePageMenuItem{
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+  width: 80vw;
+  color: black;
+  height: 40vh;
+
+}
+
+.eachMenuItem a{
+  text-decoration: none !important;
+  color: Black;
+}
+
+.eachMenuItem:hover{
+  border: 5px solid black;
+
+}
+
+.itemTopLine{
+  display: flex;
+  flex-direction: row;
+}
+
+.itemDescription{
+  font-weight:normal;
+  padding: 10px;
+}
+
+.price{
+  font-weight:lighter;
+  font-size: 1.5rem;
+  padding: 20px;
+  top:10px;
+}
+
+
+
+
+
+
+
+/* Media Queries  */
+
+
+
+@media screen and (max-width: 600px) {
+  .topNav {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsla(68, 70%, 33%, 0.6);
+    width: 100vw;
+
+  }
+  .addressNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:60%;
+    height: 30%;
+    line-height: .5em;
+    background-color: hsla(68, 70%, 33%, 0.8);
+  }
+  .fbIcon{
+    max-width: 15px;
+    max-height: 15px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .topNav {
+    justify-content: flex-start;
+    width: 60%;
+    padding: 0;
+    background-color: hsla(68, 70%, 33%, 0.6);
+    align-items: center;
+    width: 100vw;
+  }
+
+
+  .addressNav{
+    background-color: hsla(68, 70%, 33%, 0.8);
+    width: 100%;
+  }
+  .fbIcon{
+    max-width: 20px;
+    max-height: 20px;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <title>Bull and Bear</title>
+  </head>
+  <body>
+<div class="container">
+  <header>
+        <nav class="topNav">
+          <nav class="addressNav">
+            <a href="/">BULL AND BEAR</a>
+          </nav>
+          <a href="/menu">MENU</a>
+          <a href="/events">EVENTS</a>
+        </nav>
+  </header>
+  <br><br>
+  <section class="eventContainer">
+      <article class="individualEvent">
+        {{#events}}
+        {{eventName}}
+        {{/events}}
+      </article>
+</section>
+<footer>
+  <!-- <a href="facebook.com/"><img class="fbIcon" src="assets/fbiconbullandbear.JPG" alt="follow us on facebook!"></a> -->
+  <nav>
+    <a href="/">Bull and Bear Restaurant</a>
+    <a href="tel:+19198473617">919.847.3617</a><br>
+    <a href="#">5442 Six Forks Rd, Raleigh, NC 27609</a>
+  </nav>
+
+</footer>
+  </div>
+  </body>
+</html>
